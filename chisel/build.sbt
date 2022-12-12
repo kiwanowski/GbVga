@@ -1,6 +1,6 @@
 // See README.md for license details.
 
-scalaVersion     := "2.12.13"
+scalaVersion     := "2.13.8"
 version          := "0.1.0"
 organization     := "eu.fabienm"
 
@@ -22,6 +22,5 @@ lazy val root = (project in file("."))
       // Enables autoclonetype2 in 3.4.x (on by default in 3.5)
       "-P:chiselplugin:useBundlePlugin"
     ),
-    addCompilerPlugin("edu.berkeley.cs" % "chisel3-plugin" % "3.5.1" cross CrossVersion.full),
-    addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full)
+    addCompilerPlugin("edu.berkeley.cs" % "chisel3-plugin" % "3.5.4" cross CrossVersion.full)
   )
