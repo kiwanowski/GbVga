@@ -8,9 +8,8 @@ lazy val root = (project in file("."))
   .settings(
     name := "gbvga",
     libraryDependencies ++= Seq(
-      "edu.berkeley.cs" %% "chisel3" % "3.5.1",
-      "edu.berkeley.cs" %% "chiseltest" % "0.5.1" % "test",
-      "edu.berkeley.cs" %% "chisel-iotesters" % "1.5.+"
+      "edu.berkeley.cs" %% "chisel3" % "3.5.4",
+      "edu.berkeley.cs" %% "chiseltest" % "0.5.4" % "test"
 //      "edu.berkeley.cs" %% "chisel-formal" % "0.1"
     ),
     scalacOptions ++= Seq(
